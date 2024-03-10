@@ -93,7 +93,7 @@ const StarWarsCharacter = () => {
               sx={{ border: "2px solid grey" }}
             >
               <img
-                src={`../public/img/${character.name}.jpg`}
+                src={`../img/${character.name}.jpg`}
                 alt={character.name}
                 style={{ width: "200px", height: "220px", margin: "2px auto" }}
               />
