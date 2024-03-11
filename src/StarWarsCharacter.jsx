@@ -100,7 +100,7 @@ const StarWarsCharacter = () => {
               />
             </Box>
           </div>
-          <CardActionArea>
+          <CardActionArea style={{ marginBottom: "10px" }}>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {character.name}
