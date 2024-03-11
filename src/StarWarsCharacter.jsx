@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -27,6 +27,7 @@ const StarWarsCharacter = () => {
       const { height, eye_color, name } = data.result.properties;
 
       setCharacter(data.result.properties);
+      setInputValue("");
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -93,7 +94,7 @@ const StarWarsCharacter = () => {
               sx={{ border: "2px solid grey" }}
             >
               <img
-                src={`../src/assets/img/${character.name}.jpg`}
+                src={`./img/${character.name}.jpg`}
                 alt={character.name}
                 style={{ width: "200px", height: "220px", margin: "2px auto" }}
               />
